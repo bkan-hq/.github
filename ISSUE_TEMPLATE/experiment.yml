@@ -1,0 +1,50 @@
+name: 🧪 마케팅 실험
+description: A/B 테스트 또는 마케팅 실험
+title: "[Experiment]: "
+labels: ["state:triage", "area:marketing"]
+body:
+  - type: textarea
+    id: hypothesis
+    attributes:
+      label: 가설
+      description: 검증하려는 가설
+      placeholder: "[변수 A]를 [변경]하면 [지표 B]가 [방향]할 것이다"
+    validations:
+      required: true
+
+  - type: textarea
+    id: design
+    attributes:
+      label: 실험 설계
+      description: Control vs Variant 설명
+      placeholder: |
+        Control: 현재 상태
+        Variant: 변경 사항
+    validations:
+      required: true
+
+  - type: input
+    id: success-criteria
+    attributes:
+      label: 성공 기준
+      description: 실험 성공 판단 기준
+      placeholder: "전환율 10% 이상 증가"
+    validations:
+      required: true
+
+  - type: input
+    id: duration
+    attributes:
+      label: 예상 기간
+      placeholder: "2주"
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: 우선순위
+      options:
+        - p0 (긴급)
+        - p1 (중요)
+        - p2 (일반)
+    validations:
+      required: true

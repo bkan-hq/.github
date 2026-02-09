@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Slack 문의
+    url: https://bkan-hq.slack.com
+    about: 긴급하지 않은 질문은 Slack으로 문의하세요
