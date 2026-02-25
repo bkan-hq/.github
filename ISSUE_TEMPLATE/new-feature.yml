@@ -54,3 +54,26 @@ body:
         - 마케팅팀
     validations:
       required: true
+
+  - type: dropdown
+    id: ai-feature
+    attributes:
+      label: AI 기능 포함 여부
+      description: AI/ML 기능이 포함된 경우 '예'를 선택하세요. Eval 게이트(Phase 3.5) 실행 여부를 결정합니다.
+      options:
+        - 아니오
+        - 예
+    validations:
+      required: false
+
+  - type: textarea
+    id: context
+    attributes:
+      label: 컨텍스트 (선택)
+      description: 관련 파일, 선행 이슈, 참고 자료 등 에이전트가 참조할 정보
+      placeholder: |
+        - 관련 파일: src/components/Auth.tsx
+        - 선행 이슈: #12
+        - 참고: https://...
+    validations:
+      required: false
