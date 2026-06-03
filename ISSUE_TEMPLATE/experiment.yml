@@ -48,3 +48,15 @@ body:
         - p2 (일반)
     validations:
       required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: 컨텍스트 (선택)
+      description: 관련 파일, 선행 이슈, 참고 자료 등 에이전트가 참조할 정보
+      placeholder: |
+        - 관련 파일: src/components/Auth.tsx
+        - 선행 이슈: #12
+        - 참고: https://...
+    validations:
+      required: false

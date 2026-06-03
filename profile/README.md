@@ -18,7 +18,7 @@ Orchestrator (메인 에이전트)
 
 | 영역 | 기술 |
 |------|------|
-| **Web** | Next.js 14+, TypeScript strict, Tailwind CSS + shadcn/ui |
+| **Web** | Next.js 16+, TypeScript strict, Tailwind CSS + shadcn/ui |
 | **Backend** | FastAPI, Python 3.12+, uv |
 | **BaaS** | Supabase (Auth, DB, Storage, Edge Functions) |
 | **배포** | Vercel |
